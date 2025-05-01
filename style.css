@@ -1,0 +1,152 @@
+/* Estilos principais do site FTS 2025 */
+body {
+  font-family: Arial, sans-serif;
+  background: #111;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.text-accent {
+  color: #00ffd5;
+}
+
+h2 {
+  color: #00ffd5;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+h3 {
+  color: white;
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+.header {
+  background: #222;
+  padding: 20px;
+  text-align: center;
+}
+
+.header h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.section {
+  padding: 40px 0;
+  margin-bottom: 20px;
+}
+
+.section-description {
+  text-align: center;
+  color: #ccc;
+  max-width: 800px;
+  margin: 0 auto 30px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.feature-card {
+  background: #2D2D2D;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #444444;
+  transition: all 0.3s ease;
+}
+
+.feature-card:hover {
+  border-color: #00ffd5;
+}
+
+.feature-icon {
+  width: 48px;
+  height: 48px;
+  background: rgba(0, 255, 213, 0.2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+  color: #00ffd5;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.feature-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.feature-item i {
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+.download-button {
+  display: inline-block;
+  padding: 12px 20px;
+  margin: 10px 5px;
+  background-color: #00ffd5;
+  color: #000;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.download-button:hover {
+  background-color: rgba(0, 255, 213, 0.8);
+}
+
+.download-button i {
+  margin-right: 8px;
+}
+
+img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-top: 10px;
+  border: 2px solid rgba(0, 255, 213, 0.3);
+}
+
+/* Media queries para responsividade */
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .feature-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
